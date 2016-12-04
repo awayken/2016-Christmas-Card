@@ -1,0 +1,36 @@
+{
+  "name": "2016-christmas-card",
+  "version": "1.0.0",
+  "description": "Rauschémon Go, the 2016 Christmas Card",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awayken/2016-Christmas-Card.git"
+  },
+  "keywords": [
+    "christmas",
+    "christmas",
+    "card",
+    "rausch"
+  ],
+  "author": "Miles Rausch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awayken/2016-Christmas-Card/issues"
+  },
+  "homepage": "https://github.com/awayken/2016-Christmas-Card#readme",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.8.0"
+  },
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
