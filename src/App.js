@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Chooser from './Chooser';
+import Pokemon from './Pokemon';
+
 import './App.css';
 
 const pokedex = {
@@ -32,15 +34,6 @@ var family = [
     pokedex.ainsley
 ];
 
-/*
-When the Pokemon array changes, use this to keep state immutable:
-handleClick(i) {
-  const squares = this.state.squares.slice();
-  squares[i] = 'X';
-  this.setState({squares: squares});
-}
-*/
-
 class App extends Component {
     constructor(props) {
         super(props);
@@ -49,7 +42,11 @@ class App extends Component {
         this.handleChoice = this.handleChoice.bind(this);
     }
 
-    handleChoice(newValue) {
+    handleChoice(newValue, e) {
+        if ( e ) {
+            e.preventDefault();
+        }
+
         this.setState({
             chosenValue: newValue
         });
@@ -60,13 +57,24 @@ class App extends Component {
     componentWillUnmount() {}
 
     render() {
+        const chosenValue = this.state.chosenValue;
+
         return (
-            <Chooser
-                choices={this.state.family}
-                chosenValue={this.state.chosenValue}
-                caught={this.state.caught}
-                // evolved={this.state.evolved}
-                handleChoice={this.handleChoice} />
+            <div className="app">
+                <Chooser
+                    choices={this.state.family}
+                    chosenValue={chosenValue}
+                    caught={this.state.caught}
+                    // evolved={this.state.evolved}
+                    handleChoice={this.handleChoice} />
+
+                {(chosenValue !== 'none') ?
+                    <div>
+                        <Pokemon pokemon={pokedex[chosenValue]} />
+                        <a href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>Close</a>
+                    </div>
+                : ''}
+            </div>
         );
     }
 }

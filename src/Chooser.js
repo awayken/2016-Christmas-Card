@@ -6,7 +6,7 @@ class Choice extends Component {
         const title = `A Wild ${this.props.data.name}`;
 
         return (
-            <a href="#" className="chooser--choice" title={ this.props.isCaught ? 'View ' + title : 'Catch ' + title } onClick={() => this.props.handleChoice(this.props.data.key)}>
+            <a href="#" className="chooser--choice" title={ this.props.isCaught ? 'View ' + title : 'Catch ' + title } onClick={(e) => this.props.handleChoice(this.props.data.key, e)}>
                 {title}
             </a>
         );
