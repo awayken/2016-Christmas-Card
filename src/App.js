@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+// React Components
 import Chooser from './Chooser';
 import Pokemon from './Pokemon';
 
@@ -8,6 +10,7 @@ import pokedex from './_pokedex';
 // Styles
 import './App.css';
 
+// Create our family of Pokémon
 var family = [
     pokedex.miles,
     pokedex.holli,
@@ -15,19 +18,30 @@ var family = [
     pokedex.ainsley
 ];
 
+// Define our component
 class App extends Component {
     constructor(props) {
         super(props);
-        this.state = { chosenValue: 'none', caught: [], evolved: [], family: family };
 
+        // Initialize our state
+        this.state = {
+            chosenValue: 'none',
+            caught: [],
+            evolved: [],
+            family: family
+        };
+
+        // Bind our handlers to our class
         this.handleChoice = this.handleChoice.bind(this);
     }
 
+    // Handle people choosing a Pokémon
     handleChoice(newValue, e) {
         if ( e ) {
             e.preventDefault();
         }
 
+        // Set the chosenValue state to newValue
         this.setState({
             chosenValue: newValue
         });
@@ -42,6 +56,7 @@ class App extends Component {
 
         return (
             <div className="app">
+                // Create a Chooser
                 <Chooser
                     choices={this.state.family}
                     chosenValue={chosenValue}
@@ -51,8 +66,11 @@ class App extends Component {
 
                 {(chosenValue !== 'none') ?
                     <div>
+                        // Create a Pokémon
                         <Pokemon pokemon={pokedex[chosenValue]} />
-                        <a href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>Close</a>
+
+                        // And a close button
+                        <a className="app--close" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>Close</a>
                     </div>
                 : ''}
             </div>
