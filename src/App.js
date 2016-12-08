@@ -54,22 +54,28 @@ class App extends Component {
     render() {
         const chosenValue = this.state.chosenValue;
 
+        var chosenPokemon = '';
+        if ( chosenValue !== 'none' ) {
+            chosenPokemon = pokedex[chosenValue];
+        }
+
         return (
             <div className="app">
-                // Create a Chooser
                 <Chooser
                     choices={this.state.family}
                     chosenValue={chosenValue}
                     caught={this.state.caught}
-                    // evolved={this.state.evolved}
                     handleChoice={this.handleChoice} />
 
                 {(chosenValue !== 'none') ?
                     <div>
-                        // Create a Pokémon
-                        <Pokemon pokemon={pokedex[chosenValue]} />
-
-                        // And a close button
+                        <Pokemon
+                            cp={chosenPokemon.cp}
+                            portrait={chosenPokemon.portrait}
+                            name={chosenPokemon.name}
+                            stats={chosenPokemon.stats}
+                            description={chosenPokemon.description}
+                            catch={chosenPokemon.catch} />
                         <a className="app--close" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>Close</a>
                     </div>
                 : ''}
