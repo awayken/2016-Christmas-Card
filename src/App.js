@@ -2,30 +2,11 @@ import React, { Component } from 'react';
 import Chooser from './Chooser';
 import Pokemon from './Pokemon';
 
-import './App.css';
+// Pokédex data
+import pokedex from './_pokedex';
 
-const pokedex = {
-    miles: {
-        key: 'miles',
-        name: 'Miles'
-    },
-    miles_evolved: {
-        key: 'miles',
-        name: 'Kilometers'
-    },
-    holli: {
-        key: 'holli',
-        name: 'Holli'
-    },
-    ian: {
-        key: 'ian',
-        name: 'Ian'
-    },
-    ainsley: {
-        key: 'ainsley',
-        name: 'Ainsley'
-    }
-};
+// Styles
+import './App.css';
 
 var family = [
     pokedex.miles,
