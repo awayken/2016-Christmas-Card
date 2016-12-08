@@ -21,8 +21,6 @@ class Chooser extends Component {
 
         return (
             <div className="chooser">
-                The chosen value is { this.props.chosenValue }.
-
                 <nav className="chooser--choices">
                     {chooserItems}
                 </nav>
