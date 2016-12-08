@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Chooser from './Pokemon';
+import Pokemon from './Pokemon';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Pokemon />, div);
+  const data = {
+      name: 'Miles'
+  };
+
+  ReactDOM.render(<Pokemon pokemon={data} />, div);
 });

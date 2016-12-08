@@ -4,5 +4,12 @@ import Chooser from './Chooser';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Chooser />, div);
+  const choices = [
+      {
+          name: 'Miles',
+          key: 'miles'
+      }
+  ];
+
+  ReactDOM.render(<Chooser choices={choices} caught='' />, div);
 });
