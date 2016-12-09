@@ -33,6 +33,7 @@ class App extends Component {
 
         // Bind our handlers to our class
         this.handleChoice = this.handleChoice.bind(this);
+        this.handleEvolve = this.handleEvolve.bind(this);
     }
 
     // Handle people choosing a Pokémon
@@ -47,6 +48,22 @@ class App extends Component {
         });
     }
 
+    // Handle people evolving a Pokémon
+    handleEvolve(evolveToKey, e) {
+        if ( e ) {
+            e.preventDefault();
+        }
+
+        console.log(evolveToKey);
+
+        // let newFamily = family;
+        // newFamily[currentKey] = pokedex[evolveToKey];
+        //
+        // this.setState({
+        //     family: newFamily
+        // });
+    }
+
     componentDidMount() {}
 
     componentWillUnmount() {}
@@ -54,7 +71,7 @@ class App extends Component {
     render() {
         const chosenValue = this.state.chosenValue;
 
-        var chosenPokemon = '';
+        let chosenPokemon = '';
         if ( chosenValue !== 'none' ) {
             chosenPokemon = pokedex[chosenValue];
         }
@@ -75,7 +92,9 @@ class App extends Component {
                             name={chosenPokemon.name}
                             stats={chosenPokemon.stats}
                             description={chosenPokemon.description}
-                            catch={chosenPokemon.catch} />
+                            evolvesInto={chosenPokemon.evolvesInto}
+                            catch={chosenPokemon.catch}
+                            handleEvolve={this.handleEvolve} />
                         <a className="app--close" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>Close</a>
                     </div>
                 : ''}
