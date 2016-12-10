@@ -12,10 +12,22 @@ import './App.css';
 
 // Create our family of Pokémon
 var family = [
-    pokedex.miles,
-    pokedex.holli,
-    pokedex.ian,
-    pokedex.ainsley
+    {
+        name: 'Miles',
+        pokemon: 'miles'
+    },
+    {
+        name: 'Holli',
+        pokemon: 'holli'
+    },
+    {
+        name: 'Ian',
+        pokemon: 'ian'
+    },
+    {
+        name: 'Ainsley',
+        pokemon: 'ainsley'
+    }
 ];
 
 // Define our component
@@ -54,14 +66,22 @@ class App extends Component {
             e.preventDefault();
         }
 
-        console.log(evolveToKey);
+        const chosenValue = this.state.chosenValue;
+        const family = this.state.family;
 
-        // let newFamily = family;
-        // newFamily[currentKey] = pokedex[evolveToKey];
-        //
-        // this.setState({
-        //     family: newFamily
-        // });
+        let newFamily = family.map((familyMember) => {
+            if ( familyMember.pokemon === chosenValue ) {
+                familyMember.name = pokedex[evolveToKey].name;
+                familyMember.pokemon = evolveToKey;
+            }
+
+            return familyMember;
+        });
+
+        this.setState({
+            chosenValue: 'none',
+            family: newFamily
+        });
     }
 
     componentDidMount() {}
