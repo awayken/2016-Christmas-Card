@@ -37,7 +37,7 @@ class App extends Component {
 
         // Initialize our state
         this.state = {
-            chosenValue: 'none',
+            activePokemon: 'none',
             caught: [],
             evolved: [],
             family: family
@@ -49,14 +49,14 @@ class App extends Component {
     }
 
     // Handle people choosing a Pokémon
-    handleChoice(newValue, e) {
+    handleChoice(chosenPokemon, e) {
         if ( e ) {
             e.preventDefault();
         }
 
-        // Set the chosenValue state to newValue
+        // Set the activePokemon state to chosen Pokemon
         this.setState({
-            chosenValue: newValue
+            activePokemon: chosenPokemon
         });
     }
 
@@ -66,11 +66,11 @@ class App extends Component {
             e.preventDefault();
         }
 
-        const chosenValue = this.state.chosenValue;
+        const activePokemon = this.state.activePokemon;
         const family = this.state.family;
 
         let newFamily = family.map((familyMember) => {
-            if ( familyMember.pokemon === chosenValue ) {
+            if ( familyMember.pokemon === activePokemon ) {
                 return {
                     name: pokedex[evolveToKey].name,
                     pokemon: evolveToKey
@@ -81,7 +81,7 @@ class App extends Component {
         });
 
         this.setState({
-            chosenValue: evolveToKey,
+            activePokemon: evolveToKey,
             family: newFamily
         });
     }
@@ -91,22 +91,22 @@ class App extends Component {
     componentWillUnmount() {}
 
     render() {
-        const chosenValue = this.state.chosenValue;
+        const activePokemon = this.state.activePokemon;
 
         let chosenPokemon = '';
-        if ( chosenValue !== 'none' ) {
-            chosenPokemon = pokedex[chosenValue];
+        if ( activePokemon !== 'none' ) {
+            chosenPokemon = pokedex[activePokemon];
         }
 
         return (
             <div className="app">
                 <Chooser
                     choices={this.state.family}
-                    chosenValue={chosenValue}
+                    activePokemon={activePokemon}
                     caught={this.state.caught}
                     handleChoice={this.handleChoice} />
 
-                {(chosenValue !== 'none') ?
+                {(activePokemon !== 'none') ?
                     <div>
                         <Pokemon
                             cp={chosenPokemon.cp}
