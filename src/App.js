@@ -71,15 +71,17 @@ class App extends Component {
 
         let newFamily = family.map((familyMember) => {
             if ( familyMember.pokemon === chosenValue ) {
-                familyMember.name = pokedex[evolveToKey].name;
-                familyMember.pokemon = evolveToKey;
+                return {
+                    name: pokedex[evolveToKey].name,
+                    pokemon: evolveToKey
+                };
             }
 
             return familyMember;
         });
 
         this.setState({
-            chosenValue: 'none',
+            chosenValue: evolveToKey,
             family: newFamily
         });
     }
