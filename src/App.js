@@ -86,10 +86,6 @@ class App extends Component {
         });
     }
 
-    componentDidMount() {}
-
-    componentWillUnmount() {}
-
     render() {
         const activePokemon = this.state.activePokemon;
 
