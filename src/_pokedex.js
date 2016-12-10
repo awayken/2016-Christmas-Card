@@ -84,7 +84,7 @@ const pokedex = {
             date: '4/30/2010'
         }
     },
-    bian: {
+    ianblastoise: {
         key: 'ianblastoise',
         name: 'Ian-Blastoise',
         evolvesInto: '',
@@ -118,7 +118,7 @@ const pokedex = {
             date: '9/23/2012'
         }
     },
-    budainsley: {
+    ellie: {
         key: 'ellie',
         name: 'Ellie',
         evolvesInto: '',
