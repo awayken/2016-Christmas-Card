@@ -7,7 +7,19 @@ it('renders without crashing', () => {
   const choices = [
       {
           name: 'Miles',
-          key: 'miles'
+          pokemon: 'miles'
+      },
+      {
+          name: 'Holli',
+          pokemon: 'holliweather'
+      },
+      {
+          name: 'Ian',
+          pokemon: 'ian'
+      },
+      {
+          name: 'Ainsley',
+          pokemon: 'ellie'
       }
   ];
 
