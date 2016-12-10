@@ -70,7 +70,7 @@ const pokedex = {
     ian: {
         key: 'ian',
         name: 'Ian',
-        evolvesInto: 'bian',
+        evolvesInto: 'ianblastoise',
         cp: 5,
         portrait: 'ian.png',
         stats: {
@@ -85,11 +85,11 @@ const pokedex = {
         }
     },
     bian: {
-        key: 'bian',
-        name: 'Bian',
+        key: 'ianblastoise',
+        name: 'Ian-Blastoise',
         evolvesInto: '',
         cp: 6,
-        portrait: 'bian.png',
+        portrait: 'ianblastoise.png',
         stats: {
             height: '1m',
             type: 'fire',
@@ -104,7 +104,7 @@ const pokedex = {
     ainsley: {
         key: 'ainsley',
         name: 'Ainsley',
-        evolvesInto: 'budainsley',
+        evolvesInto: 'ellie',
         cp: 3,
         portrait: 'ainsley.png',
         stats: {
@@ -119,11 +119,11 @@ const pokedex = {
         }
     },
     budainsley: {
-        key: 'budainsley',
-        name: 'Budainsley',
+        key: 'ellie',
+        name: 'Ellie',
         evolvesInto: '',
         cp: 4,
-        portrait: 'budainsley.png',
+        portrait: 'ellie.png',
         stats: {
             height: '1m',
             type: 'fire',
