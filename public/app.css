@@ -1,5 +1,9 @@
 /* =Generic Styles */
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     background: linear-gradient(#a8fcac, #62f0d1);
     min-height: 100vh;
@@ -96,13 +100,25 @@ img {
 
 /* =Chooser */
 
+.chooser {
+    text-align: center;
+}
+
 .chooser--choices {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .chooser--choice {
+    flex-basis: 50%;
     padding: .5em;
+}
+
+@media (min-width: 30em) {
+    .chooser--choice {
+        flex-basis: auto;
+    }
 }
 
 /* =Footer */
