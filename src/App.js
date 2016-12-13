@@ -7,9 +7,6 @@ import Pokemon from './Pokemon';
 // Pokédex data
 import pokedex from './_pokedex';
 
-// Styles
-import './App.css';
-
 // Create our family of Pokémon
 var family = [
     {

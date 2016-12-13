@@ -4,23 +4,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="%PUBLIC_URL%/app.css">
     <title>Rauschémon Go!</title>
-    <meta name="description" content="Rauschémon Go! The 2016 Christmas Card. Gotta Catch Us All!">
+    <meta name="description" content="Rauschémon Go! Gotta Catch Us All! This is the 2016 Christmas Card for the Miles Rausch Family.">
 </head>
 <body>
     <header class="header">
-        <h1 class="header--heading">Rauschémon Go!</h1>
+        <h1 class="header--heading">
+            <img class="header--logo" alt="Rauschémon Go!" src="%PUBLIC_URL%/rauschemon_go_logo.png">
+        </h1>
         <span class="header--subtitle">Gotta Catch Us All!</span>
     </header>
 
     <main class="main">
-        <details>
-            <summary>What is this all about?</summary>
-            <p>Every year we reflect on the previous 365 days worth of life events and try to suss out patterns. What were the things that really influenced our family in 2016? The obvious answer was the game, Pokeémon Go. Miles discovered it and soon got the entire family hooked on it. The kids have been getting books, watching TV shows on Netflix, and asking constantly if they can play it. We eventually had to start a Pokémon schedule to handle the fighting and unbearable uncertainty. It made our Christmas Card theme simple: Rauschémon Go: Gotta Catch Us All.</p>
-            <p>Four Rauschémon have spawned nearby. You can see them below. Tap or click on the Rauschémon to learn more about it. Some Rauschémon can be evolved into a new form. Tap or click the "Evolve" button to see what other forms they take. These evolved Rauschémon have different stats and descriptions, so be sure to read them to learn everything you can about your Rauschémon. If you catch us all&hellip; I don't know. You win, I guess? Something like that. Look, what do you want from me? Just enjoy this little website I made.</p>
+        <details class="main--details">
+            <summary class="main--summary">What is this all about?</summary>
+            <h2 class="main--heading">The History</h2>
+            <p>Every year we reflect on the previous 365 days worth of life events and try to suss out patterns. What were the things that really influenced our family in 2016? The obvious answer was the game, <a href="http://www.pokemongo.com/">Pokémon Go</a>.</p>
+            <p>Miles discovered it and soon got the entire family hooked on it. The kids have been getting books, watching TV shows on Netflix, and asking constantly if they can play it. We eventually had to start a Pokémon schedule to handle the fighting and unbearable uncertainty. It made our Christmas Card theme simple: Rauschémon Go: Gotta Catch Us All.</p>
+
+            <h2 class="main--heading">How to Play</h2>
+            <p>Four Rauschémon have spawned nearby. You can see them below.</p>
+            <ul>
+                <li>Tap or click on a Rauschémon to learn more about it.</li>
+                <li>Some Rauschémon can be evolved into a new form. Tap or click the "Evolve" button to evolve the Rauschémon.</li>
+                <li>Evolved Rauschémon have different stats and descriptions, so be sure to read them.</li>
+            </ul>
+
+            <h2 class="main--heading">Then What?</h2>
+            <p>If you catch us all&hellip; I don't know. You win, I guess? Something like that. Look, what do you want from me? Just enjoy this little website I made.</p>
         </details>
 
-        <div id="root" class="page"></div>
+        <div id="root"></div>
     </main>
 
     <footer class="footer">
