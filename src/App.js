@@ -99,20 +99,24 @@ class App extends Component {
                     caught={this.state.caught}
                     handleChoice={this.handleChoice} />
 
-                {(activePokemon !== 'none') ?
-                    <div>
-                        <Pokemon
-                            cp={chosenPokemon.cp}
-                            portrait={chosenPokemon.portrait}
-                            name={chosenPokemon.name}
-                            stats={chosenPokemon.stats}
-                            description={chosenPokemon.description}
-                            evolvesInto={chosenPokemon.evolvesInto}
-                            catch={chosenPokemon.catch}
-                            handleEvolve={this.handleEvolve} />
-                        <a className="app--close" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>Close</a>
+                <div className={(activePokemon !== 'none') ? 'app--page app--activepage' : 'app--page' }>
+                    <div className="app--paper">
+                        {(activePokemon !== 'none') ?
+                            <div>
+                                <Pokemon
+                                    cp={chosenPokemon.cp}
+                                    portrait={chosenPokemon.portrait}
+                                    name={chosenPokemon.name}
+                                    stats={chosenPokemon.stats}
+                                    description={chosenPokemon.description}
+                                    evolvesInto={chosenPokemon.evolvesInto}
+                                    catch={chosenPokemon.catch}
+                                    handleEvolve={this.handleEvolve} />
+                                <a className="app--close" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>Close</a>
+                            </div>
+                        : ''}
                     </div>
-                : ''}
+                </div>
             </div>
         );
     }
