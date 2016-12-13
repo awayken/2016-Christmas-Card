@@ -1,7 +1,7 @@
 {
   "name": "2016-christmas-card",
   "version": "1.0.0",
-  "description": "Rauschémon Go, the 2016 Christmas Card",
+  "description": "Rauschémon Go! Gotta Catch Us All!",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -9,9 +9,10 @@
   },
   "keywords": [
     "christmas",
-    "christmas",
     "card",
-    "rausch"
+    "family",
+    "rausch",
+    "react"
   ],
   "author": "Miles Rausch",
   "license": "MIT",
