@@ -16,6 +16,17 @@ body {
     padding: 0;
 }
 
+a,
+a:link,
+a:visited {
+    color: #000;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
 img {
     display: inline-block;
     max-width: 100%;
@@ -72,7 +83,7 @@ img {
     overflow: auto;
     opacity: 0;
     padding: 0 .5em;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 110vh;
     transition: all 250ms ease-in-out;
