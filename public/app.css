@@ -6,6 +6,9 @@
 
 html {
     background: linear-gradient(#a8fcac, #62f0d1);
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
     min-height: 100vh;
 }
 
@@ -30,6 +33,19 @@ a:active {
 img {
     display: inline-block;
     max-width: 100%;
+    vertical-align: middle;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
 }
 
 /* =Header */
@@ -101,8 +117,31 @@ img {
     padding: .5em 1em;
 }
 
+.app--icon {
+    border: 1px solid #a8fcac;
+    border-radius: 2em;
+    display: inline-block;
+    font-size: 2em;
+    padding: .1em .3em;
+}
+
+.app--button {
+    background: #1d8695;
+    border-radius: 2em;
+    display: inline-block;
+    line-height: 1;
+    padding: .5em;
+}
+
+.app--button,
+a.app--button {
+    color: #a8fcac;
+    text-decoration: none;
+}
+
 .app--close {
     bottom: 1em;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .7);
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
