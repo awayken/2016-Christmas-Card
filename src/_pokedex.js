@@ -4,7 +4,7 @@ const pokedex = {
         name: 'Miles',
         evolvesInto: 'kilometers',
         cp: 32,
-        portrait: 'miles.png',
+        portrait: 'http://placehold.it/350x150',
         stats: {
             height: '2.02m',
             type: 'fire',
@@ -21,7 +21,7 @@ const pokedex = {
         name: 'Kilometers',
         evolvesInto: '',
         cp: 33,
-        portrait: 'kilometers.png',
+        portrait: 'http://placehold.it/700x300',
         stats: {
             height: '2.02m',
             type: 'fire',
@@ -38,7 +38,7 @@ const pokedex = {
         name: 'Holli',
         evolvesInto: 'holliweather',
         cp: 29,
-        portrait: 'holli.png',
+        portrait: 'http://placehold.it/350x150',
         stats: {
             height: '2.02m',
             type: 'fire',
@@ -55,7 +55,7 @@ const pokedex = {
         name: 'Holliweather',
         evolvesInto: '',
         cp: 30,
-        portrait: 'holliweather.png',
+        portrait: 'http://placehold.it/700x300',
         stats: {
             height: '2.02m',
             type: 'fire',
@@ -72,7 +72,7 @@ const pokedex = {
         name: 'Ian',
         evolvesInto: 'ianblastoise',
         cp: 5,
-        portrait: 'ian.png',
+        portrait: 'http://placehold.it/350x150',
         stats: {
             height: '1m',
             type: 'fire',
@@ -89,7 +89,7 @@ const pokedex = {
         name: 'Ian-Blastoise',
         evolvesInto: '',
         cp: 6,
-        portrait: 'ianblastoise.png',
+        portrait: 'http://placehold.it/700x300',
         stats: {
             height: '1m',
             type: 'fire',
@@ -106,7 +106,7 @@ const pokedex = {
         name: 'Ainsley',
         evolvesInto: 'ellie',
         cp: 3,
-        portrait: 'ainsley.png',
+        portrait: 'http://placehold.it/350x150',
         stats: {
             height: '1m',
             type: 'fire',
@@ -123,7 +123,7 @@ const pokedex = {
         name: 'Ellie',
         evolvesInto: '',
         cp: 4,
-        portrait: 'ellie.png',
+        portrait: 'http://placehold.it/700x300',
         stats: {
             height: '1m',
             type: 'fire',

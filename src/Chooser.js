@@ -10,6 +10,7 @@ class Choice extends Component {
                 className="chooser--choice"
                 title={ this.props.isCaught ? 'View ' + title : 'Catch ' + title }
                 onClick={(e) => this.props.handleChoice(this.props.pokemon, e)}>
+                    <img className="chooser--portrait" src={this.props.portrait} alt={`A portrait of ${this.props.name}.`} />
                     {title}
             </a>
         );
@@ -24,6 +25,7 @@ class Chooser extends Component {
                     key={choice.pokemon}
                     pokemon={choice.pokemon}
                     name={choice.name}
+                    portrait={choice.portrait}
                     isCaught={ this.props.caught.indexOf(choice.pokemon) > -1 }
                     handleChoice={this.props.handleChoice} />
             );

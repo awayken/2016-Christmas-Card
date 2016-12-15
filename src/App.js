@@ -11,19 +11,23 @@ import pokedex from './_pokedex';
 var family = [
     {
         name: 'Miles',
-        pokemon: 'miles'
+        pokemon: pokedex.miles.key,
+        portrait: pokedex.miles.portrait
     },
     {
         name: 'Holli',
-        pokemon: 'holli'
+        pokemon: pokedex.holli.key,
+        portrait: pokedex.holli.portrait
     },
     {
         name: 'Ian',
-        pokemon: 'ian'
+        pokemon: pokedex.ian.key,
+        portrait: pokedex.ian.portrait
     },
     {
         name: 'Ainsley',
-        pokemon: 'ainsley'
+        pokemon: pokedex.ainsley.key,
+        portrait: pokedex.ainsley.portrait
     }
 ];
 
@@ -70,7 +74,8 @@ class App extends Component {
             if ( familyMember.pokemon === activePokemon ) {
                 return {
                     name: pokedex[evolveToKey].name,
-                    pokemon: evolveToKey
+                    pokemon: pokedex[evolveToKey].key,
+                    portrait: pokedex[evolveToKey].portrait
                 };
             }
 
@@ -100,26 +105,24 @@ class App extends Component {
                     handleChoice={this.handleChoice} />
 
                 <div className={(activePokemon !== 'none') ? 'app--page app--activepage' : 'app--page' }>
-                    <div className="app--paper">
-                        {(activePokemon !== 'none') ?
-                            <div>
-                                <Pokemon
-                                    cp={chosenPokemon.cp}
-                                    portrait={chosenPokemon.portrait}
-                                    name={chosenPokemon.name}
-                                    stats={chosenPokemon.stats}
-                                    description={chosenPokemon.description}
-                                    evolvesInto={chosenPokemon.evolvesInto}
-                                    catch={chosenPokemon.catch}
-                                    handleEvolve={this.handleEvolve} />
+                    {(activePokemon !== 'none') ?
+                        <div>
+                            <Pokemon
+                                cp={chosenPokemon.cp}
+                                portrait={chosenPokemon.portrait}
+                                name={chosenPokemon.name}
+                                stats={chosenPokemon.stats}
+                                description={chosenPokemon.description}
+                                evolvesInto={chosenPokemon.evolvesInto}
+                                catch={chosenPokemon.catch}
+                                handleEvolve={this.handleEvolve} />
 
-                                <a className="app--close app--button app--iconbutton app--floating" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>
-                                    <span className="app--icon">&times;</span>
-                                    <span className="visuallyhidden">Close</span>
-                                </a>
-                            </div>
-                        : ''}
-                    </div>
+                            <a className="app--close app--button app--iconbutton app--floating" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>
+                                <span className="app--icon">&times;</span>
+                                <span className="visuallyhidden">Close</span>
+                            </a>
+                        </div>
+                    : ''}
                 </div>
             </div>
         );
