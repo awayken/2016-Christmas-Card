@@ -112,7 +112,8 @@ class App extends Component {
                                     evolvesInto={chosenPokemon.evolvesInto}
                                     catch={chosenPokemon.catch}
                                     handleEvolve={this.handleEvolve} />
-                                <a className="app--close app--button" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>
+
+                                <a className="app--close app--button app--iconbutton app--floating" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>
                                     <span className="app--icon">&times;</span>
                                     <span className="visuallyhidden">Close</span>
                                 </a>
