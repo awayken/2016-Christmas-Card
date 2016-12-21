@@ -3,7 +3,7 @@ const pokedex = {
         key: 'miles',
         name: 'Miles',
         evolvesInto: 'kilometers',
-        cp: 32,
+        cp: 944,
         portrait: 'http://placehold.it/350x150',
         stats: {
             age: '32',
@@ -20,7 +20,7 @@ const pokedex = {
         key: 'kilometers',
         name: 'Kilometers',
         evolvesInto: '',
-        cp: 33,
+        cp: 2098,
         portrait: 'http://placehold.it/700x300',
         stats: {
             age: '33',
@@ -37,7 +37,7 @@ const pokedex = {
         key: 'holli',
         name: 'Holli',
         evolvesInto: 'holliweather',
-        cp: 29,
+        cp: 844,
         portrait: 'http://placehold.it/350x150',
         stats: {
             age: '29',
@@ -54,7 +54,7 @@ const pokedex = {
         key: 'holliweather',
         name: 'Holliweather',
         evolvesInto: '',
-        cp: 30,
+        cp: 1984,
         portrait: 'http://placehold.it/700x300',
         stats: {
             age: '30',
@@ -71,7 +71,7 @@ const pokedex = {
         key: 'ian',
         name: 'Ian',
         evolvesInto: 'ianblastoise',
-        cp: 5,
+        cp: 612,
         portrait: 'http://placehold.it/350x150',
         stats: {
             age: '5',
@@ -88,7 +88,7 @@ const pokedex = {
         key: 'ianblastoise',
         name: 'BuDian-Blastoise',
         evolvesInto: '',
-        cp: 6,
+        cp: 1450,
         portrait: 'http://placehold.it/700x300',
         stats: {
             age: '6',
@@ -105,7 +105,7 @@ const pokedex = {
         key: 'ainsley',
         name: 'Ainsley',
         evolvesInto: 'ellie',
-        cp: 3,
+        cp: 445,
         portrait: 'http://placehold.it/350x150',
         stats: {
             age: '3',
@@ -122,7 +122,7 @@ const pokedex = {
         key: 'ellie',
         name: 'Ellie',
         evolvesInto: '',
-        cp: 4,
+        cp: 1409,
         portrait: 'http://placehold.it/700x300',
         stats: {
             age: '4',
