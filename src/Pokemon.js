@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 
 class Pokemon extends Component {
     render() {
+        const pokemonClass = `pokemon pokemon--${this.props.stats.type}`;
+        const typeClass = `pokemon--statvalue pokemon--${this.props.stats.type}text`;
+
         return (
-            <article className="pokemon">
+            <article className={pokemonClass}>
                 <header className="pokemon--header">
                     <span className="pokemon--cp"><small>CP</small>{this.props.cp}</span>
                     <img className="pokemon--portrait" src={this.props.portrait} alt={'Portrait of ' + this.props.name} />
@@ -18,7 +21,7 @@ class Pokemon extends Component {
                             <small className="pokemon--statname">Height</small>
                         </li>
                         <li className="pokemon--stat">
-                            <span className="pokemon--statvalue">{this.props.stats.type}</span>
+                            <span className={typeClass}>{this.props.stats.type}</span>
                             <small className="pokemon--statname">Type</small>
                         </li>
                         <li className="pokemon--stat">

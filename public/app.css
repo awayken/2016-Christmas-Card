@@ -199,7 +199,39 @@ a.app--button {
 /* =Pokemon */
 
 .pokemon {
-    background: #000;
+    background: linear-gradient(#a8fcac, #62f0d1);
+}
+
+.pokemon--fire {
+    background: linear-gradient(#ff9748, #ffb753);
+}
+
+.pokemon--firetext {
+    color: #ff9748;
+}
+
+.pokemon--electric {
+    background: linear-gradient(#f5d442, #f5e575);
+}
+
+.pokemon--electrictext {
+    color: #f5d442;
+}
+
+.pokemon--water {
+    background: linear-gradient(#4e90cf, #80cce8);
+}
+
+.pokemon--watertext {
+    color: #4e90cf;
+}
+
+.pokemon--flying {
+    background: linear-gradient(#8aaade, #a9caf9);
+}
+
+.pokemon--flyingtext {
+    color: #8aaade;
 }
 
 .pokemon--header {
