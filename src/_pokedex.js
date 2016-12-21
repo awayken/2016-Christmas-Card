@@ -10,7 +10,7 @@ const pokedex = {
             type: 'fire',
             weight: 'NaN'
         },
-        description: 'Miles are usually found in front of computers. During the day, Miles program websites for Security Labs where he is never far from coffee. This Rauschémon keeps buff by visiting the gym regularly and keeps entertained by listening to way too podcasts.',
+        description: 'UPDATE: "way too MANY podcasts", Hamilton?, nanowrimo? Miles are usually found in front of computers. During the day, Miles program websites for Security Labs where he is never far from coffee. This Rauschémon keeps buff by visiting the gym regularly and keeps entertained by listening to way too podcasts.',
         catch: {
             location: 'Aberdeen, SD, United States',
             date: '2/28/1983'
@@ -61,7 +61,7 @@ const pokedex = {
             type: 'fire',
             weight: 'NaN'
         },
-        description: 'Holliweathers are great cooks and bakers. They sometimes etch designs onto glasses or print designs onto t-shirts. When given some quiet time alone, this Rauschémon might be discovered coloring in zen-like tranquility.',
+        description: 'UPDATE: turned thirty. Holliweathers are great cooks and bakers. They sometimes etch designs onto glasses or print designs onto t-shirts. When given some quiet time alone, this Rauschémon might be discovered coloring in zen-like tranquility.',
         catch: {
             location: 'Hawarden, SD, United States',
             date: '4/15/1986'
@@ -78,7 +78,7 @@ const pokedex = {
             type: 'fire',
             weight: '30'
         },
-        description: 'Ian can be found on the playground at his kindergarten. Ians can run up to 75 miles per hour and growl like a tiger when they watch too much Zooptopia. Ians like to eat taverns or hot chili soup.',
+        description: 'UPDATE: losing four teeth, star wars camp, okoboji camp with mom. Ian can be found on the playground at his kindergarten. Ians can run up to 75 miles per hour and growl like a tiger when they watch too much Zooptopia. Ians like to eat taverns or hot chili soup.',
         catch: {
             location: 'Sioux Falls, SD, United States',
             date: '4/30/2010'
@@ -112,7 +112,7 @@ const pokedex = {
             type: 'fire',
             weight: 'NaN'
         },
-        description: 'Ainsley spends time at preschool and can\'t wait to dress up and play house. This Rauschémon can write her name and enjoys giving warm hugs. Ainsleys eat cottage cheese almost exclusively.',
+        description: 'UPDATE: dance camp, dance. Ainsley spends time at preschool and can\'t wait to dress up and play house. This Rauschémon can write her name and enjoys giving warm hugs. Ainsleys eat cottage cheese almost exclusively.',
         catch: {
             location: 'Sioux Falls, SD, United States',
             date: '9/23/2012'
