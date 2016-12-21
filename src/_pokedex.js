@@ -41,7 +41,7 @@ const pokedex = {
         portrait: 'http://placehold.it/350x150',
         stats: {
             height: '2.02m',
-            type: 'fire',
+            type: 'electric',
             weight: 'NaN'
         },
         description: 'This Rauschémon can be found wandering the halls of New Tech High School in various themed costumes during the fall. The rest of the year, she wears fancy scarves and carries around small objects created by a 3D printer.',
@@ -58,7 +58,7 @@ const pokedex = {
         portrait: 'http://placehold.it/700x300',
         stats: {
             height: '2.02m',
-            type: 'fire',
+            type: 'electric',
             weight: 'NaN'
         },
         description: 'UPDATE: turned thirty. Holliweathers are great cooks and bakers. They sometimes etch designs onto glasses or print designs onto t-shirts. When given some quiet time alone, this Rauschémon might be discovered coloring in zen-like tranquility.',
@@ -75,7 +75,7 @@ const pokedex = {
         portrait: 'http://placehold.it/350x150',
         stats: {
             height: '1m',
-            type: 'fire',
+            type: 'water',
             weight: '30'
         },
         description: 'UPDATE: losing four teeth, star wars camp, okoboji camp with mom. Ian can be found on the playground at his kindergarten. Ians can run up to 75 miles per hour and growl like a tiger when they watch too much Zooptopia. Ians like to eat taverns or hot chili soup.',
@@ -92,7 +92,7 @@ const pokedex = {
         portrait: 'http://placehold.it/700x300',
         stats: {
             height: '1m',
-            type: 'fire',
+            type: 'water',
             weight: '30'
         },
         description: 'This Rauschémon enjoys taekwondo and currently has an orange belt. Bian can be spotted learning to read words like: red, the and fork. Bians enjoy coloring within the lines.',
@@ -109,7 +109,7 @@ const pokedex = {
         portrait: 'http://placehold.it/350x150',
         stats: {
             height: '1m',
-            type: 'fire',
+            type: 'flying',
             weight: 'NaN'
         },
         description: 'UPDATE: dance camp, dance. Ainsley spends time at preschool and can\'t wait to dress up and play house. This Rauschémon can write her name and enjoys giving warm hugs. Ainsleys eat cottage cheese almost exclusively.',
@@ -126,7 +126,7 @@ const pokedex = {
         portrait: 'http://placehold.it/700x300',
         stats: {
             height: '1m',
-            type: 'fire',
+            type: 'flying',
             weight: 'NaN'
         },
         description: 'This Rauschémon loves cheese even more than Ainsley does. Budainsleys can be found following around Bians while in costume dresses and high heels. Bian and Budainsleys mostly coexist peacefully, just make sure you have two of everything you plan to offer them.',
