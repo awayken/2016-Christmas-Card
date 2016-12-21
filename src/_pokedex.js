@@ -86,7 +86,7 @@ const pokedex = {
     },
     ianblastoise: {
         key: 'ianblastoise',
-        name: 'Ian-Blastoise',
+        name: 'BuDian-Blastoise',
         evolvesInto: '',
         cp: 6,
         portrait: 'http://placehold.it/700x300',
