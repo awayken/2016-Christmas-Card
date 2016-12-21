@@ -17,16 +17,16 @@ class Pokemon extends Component {
 
                     <ul className="pokemon--stats pokemon--panel">
                         <li className="pokemon--stat">
-                            <span className="pokemon--statvalue">{this.props.stats.height}</span>
-                            <small className="pokemon--statname">Height</small>
+                            <span className="pokemon--statvalue">{this.props.stats.age}</span>
+                            <small className="pokemon--statname">Age</small>
                         </li>
                         <li className="pokemon--stat">
                             <span className={typeClass}>{this.props.stats.type}</span>
                             <small className="pokemon--statname">Type</small>
                         </li>
                         <li className="pokemon--stat">
-                            <span className="pokemon--statvalue">{this.props.stats.weight}</span>
-                            <small className="pokemon--statname">Weight</small>
+                            <span className="pokemon--statvalue">{this.props.stats.role}</span>
+                            <small className="pokemon--statname">Role</small>
                         </li>
                     </ul>
 
