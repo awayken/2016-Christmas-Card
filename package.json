@@ -19,16 +19,17 @@
   "bugs": {
     "url": "https://github.com/awayken/2016-Christmas-Card/issues"
   },
-  "homepage": "http://www.milesrauschfamily.com/ccard/2016/",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.0"
+    "react-scripts": "0.8.0",
+    "serve": "^2.1.2"
   },
   "dependencies": {
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },
   "scripts": {
+    "now-start": "serve build/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
