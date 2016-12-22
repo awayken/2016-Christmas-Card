@@ -1,0 +1,94 @@
+/* =Generic Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(#a8fcac, #62f0d1);
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    min-height: 100vh;
+}
+
+body {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:link,
+a:visited {
+    color: #000;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* =Utilities */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+/* =Header */
+
+.header {
+    text-align: center;
+}
+
+.header--heading {
+    font-size: 1.7em;
+    margin: 0;
+    padding: 0;
+}
+
+.header--logo {
+    max-height: 25vh;
+}
+
+/* =Main */
+
+.main {
+    margin: 0 auto;
+    max-width: 40em;
+    padding: 0 1em;
+}
+
+.main--details {
+    padding: .5em 0;
+}
+
+.main--summary {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.main--heading {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+.main--heading:first-of-type {
+    margin-top: .83333em;
+}

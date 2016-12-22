@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// Import Styles
+import './App.css';
+
 // React Components
 import Chooser from './Chooser';
 import Pokemon from './Pokemon';
