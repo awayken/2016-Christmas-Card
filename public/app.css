@@ -283,7 +283,7 @@ a.app--button {
 }
 
 .pokemon--stat {
-    flex-grow: 1;
+    flex-basis: 33.3333%;
     text-align: center;
 }
 
