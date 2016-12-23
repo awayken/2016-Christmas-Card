@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+<rect x="103.632" y="292.726" width="356.156" height="55.599"/>
+<radialGradient id="SVGID_1_" cx="372" cy="173.3247" r="136.0577" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#F37253"/>
+	<stop  offset="0.3103" style="stop-color:#ED1C24"/>
+	<stop  offset="0.9655" style="stop-color:#98080C"/>
+</radialGradient>
+<path fill="url(#SVGID_1_)" d="M465.243,315.217H93.622c0-102.62,83.19-185.811,185.811-185.811S465.243,212.597,465.243,315.217z"
+	/>
+<radialGradient id="SVGID_2_" cx="281.4595" cy="387.5132" r="209.7858" gradientUnits="userSpaceOnUse">
+	<stop  offset="0.2118" style="stop-color:#D1D3D4"/>
+	<stop  offset="0.931" style="stop-color:#838587"/>
+</radialGradient>
+<path fill="url(#SVGID_2_)" d="M465.243,331.433c0,102.62-83.19,185.811-185.811,185.811S93.622,434.053,93.622,331.433H465.243z"/>
+<circle cx="281.71" cy="320.525" r="50.772"/>
+<circle fill="#FFFFFF" cx="281.707" cy="320.525" r="35.999"/>
+<radialGradient id="SVGID_3_" cx="289.5679" cy="312.8384" r="41.3656" gradientUnits="userSpaceOnUse">
+	<stop  offset="0.2118" style="stop-color:#D1D3D4"/>
+	<stop  offset="0.4695" style="stop-color:#CFD1D3"/>
+	<stop  offset="0.5976" style="stop-color:#C9CBCD"/>
+	<stop  offset="0.6972" style="stop-color:#BEC0C2"/>
+	<stop  offset="0.782" style="stop-color:#AFB1B3"/>
+	<stop  offset="0.8566" style="stop-color:#9C9EA0"/>
+	<stop  offset="0.9244" style="stop-color:#85878A"/>
+	<stop  offset="0.931" style="stop-color:#838587"/>
+</radialGradient>
+<circle fill="url(#SVGID_3_)" cx="281.707" cy="321.526" r="28.8"/>
+</svg>

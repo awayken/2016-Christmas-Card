@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="2048px" height="1536px" viewBox="0 0 2048 1536" enable-background="new 0 0 2048 1536" xml:space="preserve">
+<rect x="984.224" fill="#D9BD9D" width="1063.776" height="1536"/>
+<polygon fill="#BE1E2D" points="2048,833 2048,1536 984.224,929.5 984.224,537 "/>
+<polygon fill="#2B3990" points="984.224,929.5 0,929.5 0,1536 2048,1536 2048,1385.854 "/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-78.2148" y1="135.4717" x2="1062.4387" y2="794.0283">
+	<stop  offset="0.1034" style="stop-color:#A7A9AC"/>
+	<stop  offset="0.1868" style="stop-color:#C2C4C6;stop-opacity:0.7131"/>
+	<stop  offset="0.3255" style="stop-color:#ECECED;stop-opacity:0.2359"/>
+	<stop  offset="0.3941" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	<stop  offset="0.6355" style="stop-color:#A7A9AC"/>
+	<stop  offset="0.9507" style="stop-color:#000000;stop-opacity:0"/>
+</linearGradient>
+<rect fill="url(#SVGID_1_)" width="984.224" height="929.5"/>
+<polygon fill="#ED1C24" points="1217,537 984.224,537 2048,833 2048,741 "/>
+<g>
+	
+		<rect x="1599.021" y="213.348" fill="#D1D3D4" stroke="#939598" stroke-width="3" stroke-miterlimit="10" width="109.979" height="124.661"/>
+	<polyline fill="#D1D3D4" stroke="#939598" stroke-width="3" stroke-miterlimit="10" points="1647.935,562.461 1522.331,562.461 
+		1522.331,342.352 1460.133,396.7 1397.935,320.613 1522.331,203.766 1599.021,204.339 1737.608,562.461 	"/>
+	<polygon fill="#D1D3D4" stroke="#939598" stroke-width="3" stroke-miterlimit="10" points="1647.935,562.461 1773.539,562.461 
+		1773.539,342.352 1835.736,396.7 1897.935,320.613 1773.539,203.766 1705,203.766 1577.282,562.461 	"/>
+	
+		<line fill="none" stroke="#8B5E3C" stroke-width="40" stroke-miterlimit="10" x1="1516.111" y1="464.75" x2="1773.539" y2="464.75"/>
+	
+		<line fill="none" stroke="#8B5E3C" stroke-width="33.8049" stroke-miterlimit="10" x1="1663.173" y1="462" x2="1812.043" y2="612"/>
+	
+		<line fill="none" stroke="#8B5E3C" stroke-width="33.8049" stroke-miterlimit="10" x1="1652.583" y1="463.438" x2="1714.368" y2="637.461"/>
+	
+		<line fill="none" stroke="#F15A29" stroke-width="10" stroke-miterlimit="10" x1="1516.111" y1="464.75" x2="1773.539" y2="464.75"/>
+	<line fill="none" stroke="#F15A29" stroke-width="10" stroke-miterlimit="10" x1="1663.173" y1="462" x2="1812.043" y2="612"/>
+	
+		<line fill="none" stroke="#F15A29" stroke-width="10" stroke-miterlimit="10" x1="1652.583" y1="463.438" x2="1714.368" y2="637.461"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_2_" x="406.083" width="524" height="612"/>
+	</defs>
+	<clipPath id="SVGID_3_">
+		<use xlink:href="#SVGID_2_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_3_)">
+		
+			<rect x="450.447" y="-223.917" fill="#FFFFFF" stroke="#6D6E71" stroke-width="3" stroke-miterlimit="10" width="450" height="784.94"/>
+		<rect x="450.447" y="-223.917" fill="#2E3192" width="238.856" height="304.481"/>
+		<rect x="450.447" y="80.564" fill="#ED1C24" width="36.743" height="480.459"/>
+		<rect x="516.068" y="80.564" fill="#ED1C24" width="36.742" height="480.459"/>
+		<rect x="581.688" y="80.564" fill="#ED1C24" width="36.743" height="480.459"/>
+		<rect x="652.56" y="80.564" fill="#ED1C24" width="36.743" height="480.459"/>
+		<rect x="721.958" y="-223.917" fill="#ED1C24" width="36.742" height="784.94"/>
+		<rect x="791.52" y="-223.917" fill="#ED1C24" width="36.743" height="784.94"/>
+		<rect x="861.077" y="-223.917" fill="#ED1C24" width="36.742" height="784.94"/>
+		<g>
+			<polygon fill="#FFFFFF" points="450.739,53.669 462.642,59.544 464.55,72.679 473.814,63.175 486.897,65.418 480.721,53.669 
+				486.897,41.921 473.814,44.165 464.55,34.66 462.642,47.795 			"/>
+			<polygon fill="#FFFFFF" points="496.675,53.669 508.577,59.544 510.486,72.679 519.75,63.175 532.833,65.418 526.656,53.669 
+				532.833,41.921 519.75,44.165 510.486,34.66 508.577,47.795 			"/>
+			<polygon fill="#FFFFFF" points="542.61,53.669 554.513,59.544 556.421,72.679 565.686,63.175 578.769,65.418 572.592,53.669 
+				578.769,41.921 565.686,44.165 556.421,34.66 554.513,47.795 			"/>
+			<polygon fill="#FFFFFF" points="588.545,53.669 600.448,59.544 602.356,72.679 611.621,63.175 624.704,65.418 618.527,53.669 
+				624.704,41.921 611.621,44.165 602.356,34.66 600.448,47.795 			"/>
+			<polygon fill="#FFFFFF" points="634.481,53.669 646.384,59.544 648.292,72.679 657.557,63.175 670.639,65.418 664.463,53.669 
+				670.639,41.921 657.557,44.165 648.292,34.66 646.384,47.795 			"/>
+		</g>
+		<polygon fill="#FFFFFF" points="471.739,15.648 483.642,21.522 485.55,34.658 494.814,25.153 507.897,27.397 501.721,15.648 
+			507.897,3.899 494.814,6.144 485.55,-3.361 483.642,9.774 		"/>
+		<polygon fill="#FFFFFF" points="517.674,15.648 529.577,21.522 531.485,34.658 540.751,25.153 553.833,27.397 547.656,15.648 
+			553.833,3.899 540.751,6.144 531.485,-3.361 529.577,9.774 		"/>
+		<polygon fill="#FFFFFF" points="563.609,15.648 575.512,21.522 577.421,34.658 586.686,25.153 599.768,27.397 593.591,15.648 
+			599.768,3.899 586.686,6.144 577.421,-3.361 575.512,9.774 		"/>
+		<polygon fill="#FFFFFF" points="609.546,15.648 621.447,21.522 623.356,34.658 632.621,25.153 645.704,27.397 639.526,15.648 
+			645.704,3.899 632.621,6.144 623.356,-3.361 621.447,9.774 		"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_4_" width="429" height="612"/>
+	</defs>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_4_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_5_)">
+		
+			<rect x="-46.392" y="-127.849" fill="#FFFFFF" stroke="#6D6E71" stroke-width="2.6467" stroke-miterlimit="10" width="450" height="692.515"/>
+		<g>
+			
+				<rect x="74.847" y="373.443" transform="matrix(0.7071 0.7071 -0.7071 0.7071 302.3827 38.4241)" width="59.925" height="21.555"/>
+			
+				<rect x="27.704" y="420.586" transform="matrix(0.7071 0.7071 -0.7071 0.7071 321.9078 85.566)" width="59.924" height="21.554"/>
+			
+				<rect x="23.306" y="321.902" transform="matrix(0.7071 0.7071 -0.7071 0.7071 250.8399 59.7719)" width="59.925" height="21.554"/>
+			
+				<rect x="-11.058" y="370.653" transform="matrix(0.7071 0.7071 -0.7071 0.7071 285.9222 72.5799)" width="132.814" height="21.554"/>
+			
+				<rect x="-23.838" y="369.045" transform="matrix(0.7071 0.7071 -0.7071 0.7071 270.3674 106.915)" width="59.925" height="21.555"/>
+		</g>
+		<g>
+			
+				<rect x="276.652" y="319.102" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -143.4546 313.431)" width="59.924" height="21.554"/>
+			
+				<rect x="299.987" y="342.437" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -153.1203 336.7632)" width="59.924" height="21.554"/>
+			
+				<rect x="323.795" y="366.245" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -162.9821 360.5746)" width="59.924" height="21.554"/>
+			
+				<rect x="225.111" y="370.643" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -194.9955 292.0794)" width="59.924" height="21.554"/>
+			
+				<rect x="248.446" y="393.978" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -204.6607 315.4116)" width="59.924" height="21.554"/>
+			
+				<rect x="272.254" y="417.786" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -214.5234 339.2257)" width="59.925" height="21.555"/>
+		</g>
+		<g id="XMLID_1_">
+			<g>
+				<path fill="#2E3192" d="M242.502,264.121l-66.839-123.118c18.765-72.556-25.753-123.444-60.646-111.719v-0.009
+					c18.007-9.034,38.342-14.125,59.87-14.125c73.809,0,133.652,59.843,133.652,133.661
+					C308.539,197.952,282.018,240.9,242.502,264.121z"/>
+				<path fill="#2E3192" d="M242.502,264.121c-49.283,8.99-88.349-46.08-67.616-120.198c0.273-0.979,0.538-1.95,0.776-2.92
+					L242.502,264.121z"/>
+				<path fill="#ED1C24" d="M115.017,29.283c34.893-11.725,79.411,39.163,60.646,111.719L115.017,29.283z"/>
+				<path fill="#ED1C24" d="M174.886,143.923c-20.733,74.118,18.333,129.188,67.616,120.198
+					c-19.833,11.664-42.948,18.351-67.616,18.351c-73.827,0-133.67-59.852-133.67-133.661c0-52.3,30.032-97.577,73.8-119.536v0.009
+					l60.646,111.719C175.424,141.973,175.16,142.943,174.886,143.923z"/>
+			</g>
+			<g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
