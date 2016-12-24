@@ -5,6 +5,7 @@ import './App.css';
 
 // React Components
 import Chooser from './Chooser';
+import Page from './Page';
 import Pokemon from './Pokemon';
 
 // Pokédex data
@@ -91,13 +92,35 @@ class App extends Component {
         });
     }
 
+    getPokemon( activePokemon ) {
+        if ( activePokemon !== 'none' ) {
+            let chosenPokemon = pokedex[activePokemon];
+
+            return (
+                <Pokemon
+                    cp={chosenPokemon.cp}
+                    portrait={chosenPokemon.portrait}
+                    name={chosenPokemon.name}
+                    stats={chosenPokemon.stats}
+                    description={chosenPokemon.description}
+                    evolvesInto={chosenPokemon.evolvesInto}
+                    catch={chosenPokemon.catch}
+                    handleEvolve={this.handleEvolve} />
+            );
+        } else {
+            return '';
+        }
+    }
+
     render() {
         const activePokemon = this.state.activePokemon;
-
-        let chosenPokemon = '';
-        if ( activePokemon !== 'none' ) {
-            chosenPokemon = pokedex[activePokemon];
-        }
+        const pokemon = this.getPokemon(activePokemon);
+        const closeButton = (
+            <a className="page--close page--button page--iconbutton page--floating" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>
+                <span className="page--icon">&times;</span>
+                <span className="visuallyhidden">Close</span>
+            </a>
+        );
 
         return (
             <div className="app">
@@ -107,26 +130,10 @@ class App extends Component {
                     caught={this.state.caught}
                     handleChoice={this.handleChoice} />
 
-                <div className={(activePokemon !== 'none') ? 'app--page app--activepage' : 'app--page' }>
-                    {(activePokemon !== 'none') ?
-                        <div>
-                            <Pokemon
-                                cp={chosenPokemon.cp}
-                                portrait={chosenPokemon.portrait}
-                                name={chosenPokemon.name}
-                                stats={chosenPokemon.stats}
-                                description={chosenPokemon.description}
-                                evolvesInto={chosenPokemon.evolvesInto}
-                                catch={chosenPokemon.catch}
-                                handleEvolve={this.handleEvolve} />
-
-                            <a className="app--close app--button app--iconbutton app--floating" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>
-                                <span className="app--icon">&times;</span>
-                                <span className="visuallyhidden">Close</span>
-                            </a>
-                        </div>
-                    : ''}
-                </div>
+                <Page
+                    isActive={activePokemon !== 'none'}
+                    content={pokemon}
+                    button={closeButton} />
             </div>
         );
     }
