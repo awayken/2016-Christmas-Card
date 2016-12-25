@@ -1,6 +1,7 @@
 /* =Page */
 
 .page {
+    background: #fff;
     bottom: 0;
     color: #44696c;
     left: 0;
@@ -167,10 +168,12 @@ a.page--button {
 .pokemon--page {
     background: #fff;
     border-radius: .35em .35em 0 0;
-    margin: 0 .25em;
+    margin: 0 auto;
+    max-width: 40em;
     min-height: 80vh;
     padding: 2em .5em 5em;
     position: relative;
+    width: 96%;
     z-index: 1;
 }
 
