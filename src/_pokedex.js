@@ -78,7 +78,7 @@ const pokedex = {
             type: 'water',
             role: 'Boy'
         },
-        description: 'UPDATE: losing four teeth, star wars camp, okoboji camp with mom. Ian can be found on the playground at his kindergarten. Ians can run up to 75 miles per hour and growl like a tiger when they watch too much Zooptopia. Ians like to eat taverns or hot chili soup.',
+        description: 'Ians are fans of summer camp, especially Star Wars camp and Lake Okoboji Methodist Camp (with a friendly Holliweather). They love to run and often reach speeds of up to 750 miles per hour. Ians live mostly off hot chili soup and tator tot casserole.',
         catch: {
             location: 'Sioux Falls, SD, United States',
             date: '4/30/2010'
@@ -95,7 +95,7 @@ const pokedex = {
             type: 'water',
             role: 'Boy'
         },
-        description: 'This Rauschémon enjoys taekwondo and currently has an orange belt. Bian can be spotted learning to read words like: red, the and fork. Bians enjoy coloring within the lines.',
+        description: 'BuDian-Blastoise look like Ians but are missing four teeth (including the front two). They can be found on the playground at St. Lambert School where they attend kindergarten. This Rauschémon enjoys taekwondo and currently has a yellow belt. They can be spotted learning to read words like: "red", "seven" and "love."',
         catch: {
             location: 'Sioux Falls, SD, United States',
             date: '4/30/2010'
