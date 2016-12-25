@@ -4,12 +4,13 @@ class Pokemon extends Component {
     render() {
         const pokemonClass = `pokemon pokemon--${this.props.stats.type}`;
         const typeClass = `pokemon--statvalue pokemon--${this.props.stats.type}text`;
+        const portraitAlt = `Portrait of ${this.props.name}.`;
 
         return (
             <article className={pokemonClass}>
                 <header className="pokemon--header">
                     <span className="pokemon--cp"><small>CP</small>{this.props.cp}</span>
-                    <img className="pokemon--portrait" src={this.props.portrait} alt={'Portrait of ' + this.props.name} />
+                    <img className="pokemon--portrait" src={this.props.portrait} alt={portraitAlt} />
                 </header>
 
                 <main className="pokemon--page">

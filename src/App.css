@@ -147,7 +147,7 @@ a.page--button {
 }
 
 .pokemon--header {
-    height: 20vh;
+    height: 40vh;
     position: relative;
     z-index: 10;
 }
@@ -171,7 +171,7 @@ a.page--button {
     margin: 0 auto;
     max-width: 40em;
     min-height: 80vh;
-    padding: 2em .5em 5em;
+    padding: 1em .5em 4em;
     position: relative;
     width: 96%;
     z-index: 1;

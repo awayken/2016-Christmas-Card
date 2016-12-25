@@ -4,7 +4,7 @@ const pokedex = {
         name: 'Miles',
         evolvesInto: 'kilometers',
         cp: 944,
-        portrait: 'http://placehold.it/350x350',
+        portrait: 'images/miles.png',
         stats: {
             age: '32',
             type: 'fire',
@@ -21,7 +21,7 @@ const pokedex = {
         name: 'Kilometers',
         evolvesInto: '',
         cp: 2098,
-        portrait: 'http://placehold.it/350x350/ffffff/000000/',
+        portrait: 'images/kilometers.png',
         stats: {
             age: '33',
             type: 'fire',
@@ -38,7 +38,7 @@ const pokedex = {
         name: 'Holli',
         evolvesInto: 'holliweather',
         cp: 844,
-        portrait: 'http://placehold.it/350x350',
+        portrait: 'http://placehold.it/479x638',
         stats: {
             age: '29',
             type: 'electric',
@@ -55,7 +55,7 @@ const pokedex = {
         name: 'Holliweather',
         evolvesInto: '',
         cp: 1984,
-        portrait: 'http://placehold.it/350x350/ffffff/000000/',
+        portrait: 'http://placehold.it/479x638/ffffff/000000/',
         stats: {
             age: '30',
             type: 'electric',
@@ -72,7 +72,7 @@ const pokedex = {
         name: 'Ian',
         evolvesInto: 'ianblastoise',
         cp: 612,
-        portrait: 'http://placehold.it/350x350',
+        portrait: 'images/ian.png',
         stats: {
             age: '5',
             type: 'water',
@@ -89,7 +89,7 @@ const pokedex = {
         name: 'BuDian-Blastoise',
         evolvesInto: '',
         cp: 1450,
-        portrait: 'http://placehold.it/350x350/ffffff/000000/',
+        portrait: 'images/ianblastoise.png',
         stats: {
             age: '6',
             type: 'water',
@@ -106,7 +106,7 @@ const pokedex = {
         name: 'Ainsley',
         evolvesInto: 'ellie',
         cp: 445,
-        portrait: 'http://placehold.it/350x350',
+        portrait: 'images/ainsley.png',
         stats: {
             age: '3',
             type: 'flying',
@@ -123,7 +123,7 @@ const pokedex = {
         name: 'Ellie',
         evolvesInto: '',
         cp: 1409,
-        portrait: 'http://placehold.it/350x350/ffffff/000000/',
+        portrait: 'images/ellie.png',
         stats: {
             age: '4',
             type: 'flying',
