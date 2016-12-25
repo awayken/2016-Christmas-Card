@@ -112,7 +112,7 @@ const pokedex = {
             type: 'flying',
             role: 'Girl'
         },
-        description: 'UPDATE: dance camp, dance. Ainsley spends time at preschool and can\'t wait to dress up and play house. This Rauschémon can write her name and enjoys giving warm hugs. Ainsleys eat cottage cheese almost exclusively.',
+        description: 'Ainsleys enjoy summer camps, too, just like Ians. This Rauschémon loves to dance at dance class or whenever they feel the music. Ainsleys eat cheese almost exclusively which sometimes results in chest x-rays and severe constipation.',
         catch: {
             location: 'Sioux Falls, SD, United States',
             date: '9/23/2012'
@@ -129,7 +129,7 @@ const pokedex = {
             type: 'flying',
             role: 'Girl'
         },
-        description: 'This Rauschémon loves cheese even more than Ainsley does. Budainsleys can be found following around Bians while in costume dresses and high heels. Bian and Budainsleys mostly coexist peacefully, just make sure you have two of everything you plan to offer them.',
+        description: 'Ellies can be found at St. Lambert preschool playing dress up and house. This Rauschémon can write her name and enjoys giving warm hugs. Ellies can be found wandering around in costumes and shoes that don\'t belong to them.',
         catch: {
             location: 'Sioux Falls, SD, United States',
             date: '9/23/2012'
