@@ -35,7 +35,7 @@ class Pokemon extends Component {
                     { this.props.evolvesInto ?
                         <div className="pokemon--panel">
                             <a className="pokemon--evolve" href="#evolve" onClick={(e) => this.props.handleEvolve(this.props.evolvesInto, e)}>
-                                <span className="app--button">Evolve</span>
+                                <span className="page--button">Evolve</span>
                                 <span className="pokemon--evolvename">{this.props.name}</span>
                             </a>
                         </div>
