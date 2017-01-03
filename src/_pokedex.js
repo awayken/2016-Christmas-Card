@@ -38,7 +38,7 @@ const pokedex = {
         name: 'Holli',
         evolvesInto: 'holliweather',
         cp: 844,
-        portrait: 'http://placehold.it/479x638',
+        portrait: 'images/holli.png',
         stats: {
             age: '29',
             type: 'electric',
@@ -55,7 +55,7 @@ const pokedex = {
         name: 'Holliweather',
         evolvesInto: '',
         cp: 1984,
-        portrait: 'http://placehold.it/479x638/ffffff/000000/',
+        portrait: 'images/holliweather.png',
         stats: {
             age: '30',
             type: 'electric',
