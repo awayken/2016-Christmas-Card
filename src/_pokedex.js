@@ -10,7 +10,7 @@ const pokedex = {
             type: 'fire',
             role: 'Old Boy'
         },
-        description: 'UPDATE: "way too MANY podcasts", Hamilton?, nanowrimo? Miles are usually found in front of computers. During the day, Miles program websites for Security Labs where he is never far from coffee. This Rauschémon keeps buff by visiting the gym regularly and keeps entertained by listening to way too podcasts.',
+        description: 'Mileses are usually found in front of computers at Security Labs, LLC, listening to podcasts or the Hamilton soundtrack. This Rauschémon programs websites and is never far from coffee. He keeps buff by visiting the gym regularly and then going straight home without changing.',
         catch: {
             location: 'Aberdeen, SD, United States',
             date: '2/28/1983'
@@ -27,7 +27,7 @@ const pokedex = {
             type: 'fire',
             role: 'Old Boy'
         },
-        description: 'This Rauschémon only comes out at night. Like Miles, Kilometers spend time in front of a computer. Kilometers spends his time writing drivel dressed up as stories. When the creative pressure is too much, this Rauschémon can be seen playing Pokémon Go.',
+        description: 'Like Mileses, Kilometers spend a lot of time in front of computers but only come out during the night. This Rauschémon completed the NaNoWriMo challenge in November and spent most of the rest of the year whining about not having time to write. When the creative pressure is too much, Kilometers can be seen playing Pokémon Go.',
         catch: {
             location: 'Aberdeen, SD, United States',
             date: '2/28/1983'
