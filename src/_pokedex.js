@@ -44,7 +44,7 @@ const pokedex = {
             type: 'electric',
             role: 'Old Girl'
         },
-        description: 'This Rauschémon can be found wandering the halls of New Tech High School in various themed costumes during the fall. The rest of the year, she wears fancy scarves and carries around small objects created by a 3D printer.',
+        description: 'Hollis can be found wandering the halls of New Tech High School teaching art and photography. In the fall, you may spot this Rauschémon in a festive homecoming costume. Hollis are great cooks and bakers and enjoy fancy scarves.',
         catch: {
             location: 'Hawarden, SD, United States',
             date: '4/15/1986'
@@ -61,7 +61,7 @@ const pokedex = {
             type: 'electric',
             role: 'Old Girl'
         },
-        description: 'UPDATE: turned thirty. Holliweathers are great cooks and bakers. They sometimes etch designs onto glasses or print designs onto t-shirts. When given some quiet time alone, this Rauschémon might be discovered coloring in zen-like tranquility.',
+        description: 'Holliweathers are creators. They sometimes etch designs onto glassware or print designs onto shirts. This Rauschémon carries around small objects created by a mysterious and magical device called a 3-D printer. When given some quiet time alone, this Rauschémon might be discovered coloring in zen-like tranquility.',
         catch: {
             location: 'Hawarden, SD, United States',
             date: '4/15/1986'
