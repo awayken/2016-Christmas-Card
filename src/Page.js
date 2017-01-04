@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 
 class Page extends Component {
     render() {
-        let pageClass = 'page';
+        let pageClass = 'page animated';
+
         if (this.props.isActive) {
-            pageClass += ' page--activepage';
+            pageClass += ' slideInUp';
+        } else {
+            pageClass += ' slideOutDown';
         }
 
         return (

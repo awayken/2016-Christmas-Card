@@ -71,6 +71,16 @@ class App extends Component {
             e.preventDefault();
         }
 
+        this.setState({
+            isEvolving: true
+        });
+
+        window.setTimeout(() => {
+            this.evolvePokemon(evolveToKey);
+        }, 600);
+    }
+
+    evolvePokemon(evolveToKey) {
         const activePokemon = this.state.activePokemon;
         const family = this.state.family;
 
@@ -88,16 +98,20 @@ class App extends Component {
 
         this.setState({
             activePokemon: evolveToKey,
-            family: newFamily
+            family: newFamily,
+            isEvolving: false
         });
     }
 
-    getPokemon( activePokemon ) {
+    getPokemon(activePokemon) {
+        const isEvolving = this.state.isEvolving;
+
         if ( activePokemon !== 'none' ) {
             let chosenPokemon = pokedex[activePokemon];
 
             return (
                 <Pokemon
+                    isEvolving={isEvolving}
                     cp={chosenPokemon.cp}
                     portrait={chosenPokemon.portrait}
                     name={chosenPokemon.name}
@@ -114,6 +128,7 @@ class App extends Component {
 
     render() {
         const activePokemon = this.state.activePokemon;
+        const isEvolving = this.state.isEvolving;
         const pokemon = this.getPokemon(activePokemon);
         const closeButton = (
             <a className="page--close page--button page--iconbutton page--floating" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>
@@ -131,6 +146,7 @@ class App extends Component {
                     handleChoice={this.handleChoice} />
 
                 <Page
+                    isEvolving={isEvolving}
                     isActive={activePokemon !== 'none'}
                     content={pokemon}
                     button={closeButton} />

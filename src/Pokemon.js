@@ -6,14 +6,25 @@ class Pokemon extends Component {
         const typeClass = `pokemon--statvalue pokemon--${this.props.stats.type}text`;
         const portraitAlt = `Portrait of ${this.props.name}.`;
 
+        let portraitClass = 'pokemon--portrait animated';
+        let pageClass = 'pokemon--page animated';
+
+        if (this.props.isEvolving) {
+            portraitClass += ' zoomOut';
+            pageClass += ' fadeOut';
+        } else {
+            portraitClass += ' zoomIn';
+            pageClass += ' fadeIn';
+        }
+
         return (
             <article className={pokemonClass}>
                 <header className="pokemon--header">
                     <span className="pokemon--cp"><small>CP</small>{this.props.cp}</span>
-                    <img className="pokemon--portrait" src={this.props.portrait} alt={portraitAlt} />
+                    <img className={portraitClass} src={this.props.portrait} alt={portraitAlt} />
                 </header>
 
-                <main className="pokemon--page">
+                <main className={pageClass}>
                     <h1 className="pokemon--name">{this.props.name}</h1>
 
                     <ul className="pokemon--stats pokemon--panel">
