@@ -1,6 +1,7 @@
 /* =Page */
 
 .page {
+    animation-duration: 300ms;
     background: #fff;
     bottom: 0;
     color: #44696c;
@@ -9,13 +10,8 @@
     position: fixed;
     right: 0;
     top: 0;
-    transition: all 250ms ease-in-out;
     transform: translateY(110vh);
     z-index: 10;
-}
-
-.page--activepage {
-    transform: translateY(0);
 }
 
 .page--content {
@@ -160,12 +156,14 @@ a.page--button {
 }
 
 .pokemon--portrait {
+    animation-duration: 500ms;
     display: block;
     margin: 0 auto;
     max-height: 100%;
 }
 
 .pokemon--page {
+    animation-duration: 500ms;
     background: #fff;
     border-radius: .35em .35em 0 0;
     margin: 0 auto;
