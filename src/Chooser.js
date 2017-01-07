@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 
 class Choice extends Component {
     render() {
-        const title = `A Wild ${this.props.name}`;
+        const title = `A ${ this.props.isCaught ? 'Caught' : 'Wild' } ${this.props.name}`;
 
         return (
-            <a
-                href="#"
+            <a href="#"
                 className="chooser--choice"
-                title={ this.props.isCaught ? 'View ' + title : 'Catch ' + title }
                 onClick={(e) => this.props.handleChoice(this.props.pokemon, e)}>
                     <img className="chooser--portrait" src={this.props.portrait} alt={`A portrait of ${this.props.name}.`} />
                     {title}

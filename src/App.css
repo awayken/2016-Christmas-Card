@@ -52,22 +52,27 @@ a.page--button {
 
 .page--floating {
     box-shadow: 0 0 .5em rgba(0, 0, 0, .7);
-    transition: all 300ms ease-in-out;
+    position: fixed;
+    transition: box-shadow 300ms ease-in-out;
+    z-index: 100;
 }
 
 .page--floating:hover,
 .page--floating:active,
 .page--floating:focus {
     box-shadow: 0 0 .75em rgba(0, 0, 0, .7);
-    transition: all 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out;
 }
 
 .page--close {
     bottom: 1em;
     left: 50%;
-    position: fixed;
     transform: translate(-50%, 0);
-    z-index: 100;
+}
+
+.page--escape {
+    left: 1em;
+    top: 1em;
 }
 
 /* =Chooser */
@@ -102,6 +107,48 @@ a.page--button {
         flex-basis: auto;
         flex-grow: 1;
     }
+}
+
+/* =Catcher */
+
+.catcher {
+    align-items: center;
+    background: no-repeat top center #fff;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.catcher--miles {
+    background-color: fuschia;
+    background-image: url("/images/writing-desk.png");
+}
+
+.catcher--holli {
+    background-color: fuschia;
+    background-image: url("/images/art-studio.png");
+}
+
+.catcher--ian {
+    background-color: fuschia;
+    background-image: url("/images/taekwondo.png");
+}
+
+.catcher--ainsley {
+    background-color: fuschia;
+    background-image: url("/images/dance-studio.png");
+}
+
+.catcher--quarry {
+    height: 60vh;
+    margin-top: 10vh;
+}
+
+.catcher--ball {
+    height: 20vh;
+    margin-bottom: 1em;
 }
 
 /* =Pokemon */

@@ -6,6 +6,7 @@ import './App.css';
 // React Components
 import Chooser from './Chooser';
 import Page from './Page';
+import Catcher from './Catcher';
 import Pokemon from './Pokemon';
 
 // Pokédex data
@@ -44,12 +45,14 @@ class App extends Component {
         this.state = {
             activePokemon: 'none',
             caught: [],
-            evolved: [],
+            isCatching: false,
+            isEvolving: false,
             family: family
         };
 
         // Bind our handlers to our class
         this.handleChoice = this.handleChoice.bind(this);
+        this.handleCatch = this.handleCatch.bind(this);
         this.handleEvolve = this.handleEvolve.bind(this);
     }
 
@@ -59,9 +62,29 @@ class App extends Component {
             e.preventDefault();
         }
 
+        const caught = this.state.caught;
+
         // Set the activePokemon state to chosen Pokemon
         this.setState({
-            activePokemon: chosenPokemon
+            activePokemon: chosenPokemon,
+            isCatching: caught.indexOf(chosenPokemon) === -1
+        });
+    }
+
+    // Handle people catching a Pokémon
+    handleCatch(e) {
+        if ( e ) {
+            e.preventDefault();
+        }
+
+        const activePokemon = this.state.activePokemon;
+        let caught = this.state.caught;
+        caught.push(activePokemon);
+
+        // Stop catching
+        this.setState({
+            caught: caught,
+            isCatching: false
         });
     }
 
@@ -80,12 +103,16 @@ class App extends Component {
         }, 600);
     }
 
+    // Evolve our Pokémon
     evolvePokemon(evolveToKey) {
         const activePokemon = this.state.activePokemon;
+        const caught = this.state.caught;
         const family = this.state.family;
 
         let newFamily = family.map((familyMember) => {
             if ( familyMember.pokemon === activePokemon ) {
+                caught.push(pokedex[evolveToKey].key);
+
                 return {
                     name: pokedex[evolveToKey].name,
                     pokemon: pokedex[evolveToKey].key,
@@ -98,11 +125,13 @@ class App extends Component {
 
         this.setState({
             activePokemon: evolveToKey,
-            family: newFamily,
-            isEvolving: false
+            caught: caught,
+            isEvolving: false,
+            family: newFamily
         });
     }
 
+    // Get Pokémon component using activePokemon data
     getPokemon(activePokemon) {
         const isEvolving = this.state.isEvolving;
 
@@ -126,16 +155,44 @@ class App extends Component {
         }
     }
 
+    // Get Catcher screen based on activePokemon
+    getCatchScreen(activePokemon) {
+        if (activePokemon !== 'none') {
+            let chosenPokemon = pokedex[activePokemon];
+
+            return (
+                <Catcher
+                    quarryName={chosenPokemon.key}
+                    quarry={chosenPokemon.portrait}
+                    handleCatch={this.handleCatch} />
+            );
+        } else {
+            return '';
+        }
+    }
+
+    // Render our App component
     render() {
         const activePokemon = this.state.activePokemon;
         const isEvolving = this.state.isEvolving;
-        const pokemon = this.getPokemon(activePokemon);
+        const isCatching = this.state.isCatching;
+
+        let closeClass = `page--button page--iconbutton page--floating `;
+        if (isCatching) {
+            closeClass += `page--escape`;
+        } else {
+            closeClass += `page--close`;
+        }
+
         const closeButton = (
-            <a className="page--close page--button page--iconbutton page--floating" href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>
-                <span className="page--icon">&times;</span>
+            <a className={closeClass} href="#close" title="Close" onClick={(e) => this.handleChoice('none', e)}>
+                <span className="page--icon">×</span>
                 <span className="visuallyhidden">Close</span>
             </a>
         );
+
+        const pokemon = this.getPokemon(activePokemon);
+        const catchScreen = this.getCatchScreen(activePokemon);
 
         return (
             <div className="app">
@@ -148,7 +205,7 @@ class App extends Component {
                 <Page
                     isEvolving={isEvolving}
                     isActive={activePokemon !== 'none'}
-                    content={pokemon}
+                    content={isCatching ? catchScreen : pokemon}
                     button={closeButton} />
             </div>
         );
