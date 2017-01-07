@@ -45,6 +45,7 @@ class App extends Component {
         this.state = {
             activePokemon: 'none',
             caught: [],
+            isAnimatingCatch: false,
             isCatching: false,
             isEvolving: false,
             family: family
@@ -77,15 +78,22 @@ class App extends Component {
             e.preventDefault();
         }
 
-        const activePokemon = this.state.activePokemon;
-        let caught = this.state.caught;
-        caught.push(activePokemon);
-
-        // Stop catching
         this.setState({
-            caught: caught,
-            isCatching: false
+            isAnimatingCatch: true
         });
+
+        window.setTimeout(() => {
+            const activePokemon = this.state.activePokemon;
+            let caught = this.state.caught;
+            caught.push(activePokemon);
+
+            // Stop catching
+            this.setState({
+                caught: caught,
+                isAnimatingCatch: false,
+                isCatching: false
+            });
+        }, 850);
     }
 
     // Handle people evolving a Pokémon
@@ -158,12 +166,14 @@ class App extends Component {
     // Get Catcher screen based on activePokemon
     getCatchScreen(activePokemon) {
         if (activePokemon !== 'none') {
-            let chosenPokemon = pokedex[activePokemon];
+            const isAnimatingCatch = this.state.isAnimatingCatch;
+            const chosenPokemon = pokedex[activePokemon];
 
             return (
                 <Catcher
                     quarryName={chosenPokemon.key}
                     quarry={chosenPokemon.portrait}
+                    isAnimatingCatch={isAnimatingCatch}
                     handleCatch={this.handleCatch} />
             );
         } else {

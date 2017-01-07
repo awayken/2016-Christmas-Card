@@ -151,6 +151,25 @@ a.page--button {
     margin-bottom: 1em;
 }
 
+@keyframes toss {
+    0% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
+
+    30% {
+        transform: translateX(6em) translateY(-80vh) scale(.8);
+    }
+
+    100% {
+        transform: translateX(0) translateY(-40vh) scale(.4);
+    }
+}
+
+.toss {
+    animation-duration: 750ms;
+    animation-name: toss;
+}
+
 /* =Pokemon */
 
 .pokemon {
