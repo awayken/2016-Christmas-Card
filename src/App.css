@@ -122,32 +122,32 @@ a.page--button {
 }
 
 .catcher--miles {
-    background-color: fuschia;
+    background-color: #a6a8ad;
     background-image: url("/images/writing-desk.png");
 }
 
 .catcher--holli {
-    background-color: fuschia;
+    background-color: #efbb76;
     background-image: url("/images/art-studio.png");
 }
 
 .catcher--ian {
-    background-color: fuschia;
+    background-color: #d8bd9f;
     background-image: url("/images/taekwondo.png");
 }
 
 .catcher--ainsley {
-    background-color: fuschia;
+    background-color: #9d8679;
     background-image: url("/images/dance-studio.png");
 }
 
 .catcher--quarry {
-    height: 60vh;
+    max-height: 60vh;
     margin-top: 10vh;
 }
 
 .catcher--ball {
-    height: 20vh;
+    max-height: 20vh;
     margin-bottom: 1em;
 }
 
