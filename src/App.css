@@ -113,7 +113,7 @@ a.page--button {
 
 .catcher {
     align-items: center;
-    background: no-repeat top center #fff;
+    background: no-repeat center center #fff;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -142,12 +142,12 @@ a.page--button {
 }
 
 .catcher--quarry {
-    max-height: 60vh;
+    height: 60vh;
     margin-top: 10vh;
 }
 
 .catcher--ball {
-    max-height: 20vh;
+    height: 20vh;
     margin-bottom: 1em;
 }
 
