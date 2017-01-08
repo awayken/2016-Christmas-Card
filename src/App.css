@@ -113,7 +113,7 @@ a.page--button {
 
 .catcher {
     align-items: center;
-    background: no-repeat top center #fff;
+    background: no-repeat center center #fff;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -122,22 +122,22 @@ a.page--button {
 }
 
 .catcher--miles {
-    background-color: fuschia;
+    background-color: #a6a8ad;
     background-image: url("/images/writing-desk.png");
 }
 
 .catcher--holli {
-    background-color: fuschia;
+    background-color: #efbb76;
     background-image: url("/images/art-studio.png");
 }
 
 .catcher--ian {
-    background-color: fuschia;
+    background-color: #d8bd9f;
     background-image: url("/images/taekwondo.png");
 }
 
 .catcher--ainsley {
-    background-color: fuschia;
+    background-color: #9d8679;
     background-image: url("/images/dance-studio.png");
 }
 
@@ -149,6 +149,25 @@ a.page--button {
 .catcher--ball {
     height: 20vh;
     margin-bottom: 1em;
+}
+
+@keyframes toss {
+    0% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
+
+    30% {
+        transform: translateX(6em) translateY(-80vh) scale(.8);
+    }
+
+    100% {
+        transform: translateX(0) translateY(-40vh) scale(.4);
+    }
+}
+
+.toss {
+    animation-duration: 750ms;
+    animation-name: toss;
 }
 
 /* =Pokemon */
